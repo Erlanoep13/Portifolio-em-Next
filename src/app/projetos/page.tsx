@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Projetos em Destaque | Erlano Benevides",
   description:
-    "Explore os projetos desenvolvidos por Erlano Benevides: Acesso Livre, Sistema de Reposição de Aulas IFCE, LLM para Agricultura e SGB.",
+    "Explore os projetos desenvolvidos por Erlano Benevides: A.T.E.N.A. (Sertaneja-FAPE), Instituto Girassol, Profetas da Chuva, Acesso Livre, Reposição de Aulas IFCE e IA Agrícola.",
 };
 
 export default function ProjetosPage() {
@@ -66,14 +66,271 @@ export default function ProjetosPage() {
               Projetos em Destaque
             </h1>
             <p className="mt-3 max-w-3xl text-lg text-slate-400 leading-relaxed">
-              Seleção de aplicações desenvolvidas com foco em acessibilidade urbana,
-              automação de processos institucionais, inteligência artificial generativa e arquitetura de software.
+              Seleção de aplicações desenvolvidas com foco em sistemas corporativos de missão crítica,
+              plataformas educacionais, aplicações mobile nativas, acessibilidade urbana e inteligência artificial generativa.
             </p>
           </div>
 
           {/* LISTA DETALHADA DE PROJETOS */}
           <div className="mt-12 space-y-12">
-            {/* PROJETO 1: ACESSO LIVRE (DESTAQUE MÁXIMO COM FOCO NA EVOLUÇÃO MOBILE) */}
+            {/* PROJETO 1: A.T.E.N.A. (Sertaneja-FAPE) */}
+            <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-emerald-500/50">
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-3 w-3 rounded-full bg-emerald-500" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">
+                    Plataforma de Gestão Corporativa e Agrícola
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-md bg-emerald-500/15 border border-emerald-500/30 px-2.5 py-1 text-xs font-medium text-emerald-300">
+                    Node.js
+                  </span>
+                  <span className="rounded-md bg-blue-500/15 border border-blue-500/30 px-2.5 py-1 text-xs font-medium text-blue-300">
+                    Typescript
+                  </span>
+                  <span className="rounded-md bg-cyan-500/15 border border-cyan-500/30 px-2.5 py-1 text-xs font-medium text-cyan-300">
+                    PostgreSQL
+                  </span>
+                  <span className="rounded-md bg-slate-800 border border-slate-700 px-2.5 py-1 text-xs font-medium text-slate-300">
+                    Docker
+                  </span>
+                </div>
+              </div>
+
+              <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
+                A.T.E.N.A. (Sertaneja-FAPE)
+              </h2>
+              <p className="mt-2 text-base font-medium text-slate-300">
+                Plataforma construída para digitalizar e orquestrar as operações da Cooperativa Sertaneja Cearense, em produção desde maio de 2026. Nascida como iniciativa de pesquisa e extensão no IFCE Campus Boa Viagem.
+              </p>
+
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Destaque 1: Fluxo Operacional & Compliance */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-emerald-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                    Fluxo Operacional & Compliance
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Gerencia desde o cadastro de entidades até demandas comerciais sob o conceito de <strong>Domain-Driven Compliance</strong>, incluindo suporte nativo a assinaturas digitais ICP-Brasil.
+                  </p>
+                </div>
+
+                {/* Destaque 2: Gestão e Acessos */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-cyan-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-cyan-500" />
+                    Gestão e Acessos
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Segmentação em hierarquias rígidas (Diretoria, Cooperados e Clientes) via painel web Administrativo (<strong>React + Vite</strong>) e aplicativo mobile (<strong>React Native + Expo</strong>).
+                  </p>
+                </div>
+
+                {/* Destaque 3: Qualidade e Segurança */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-blue-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-blue-500" />
+                    Qualidade e Segurança
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Backend tipado (Node.js/TypeScript) em infraestrutura Docker (Alpine Linux). TDD rigoroso com <strong>Vitest</strong> e <strong>Cypress</strong>, inspeção contínua SonarQube, rastreamento com Sentry e criptografia Argon2id.
+                  </p>
+                </div>
+              </div>
+
+              {/* Rodapé do Card (Stack) */}
+              <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-950/40 p-6">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                  Stack Tecnológica do Projeto
+                </h4>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {[
+                    "TypeScript",
+                    "Node.js",
+                    "React",
+                    "React Native",
+                    "PostgreSQL",
+                    "Docker",
+                    "Vitest",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-lg bg-slate-800/70 border border-slate-700/80 px-3 py-1 text-xs text-slate-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </article>
+
+            {/* PROJETO 2: SISTEMA E-LEARNING INSTITUTO GIRASSOL */}
+            <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-amber-500/50">
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-3 w-3 rounded-full bg-amber-500" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-amber-400">
+                    Plataforma Educacional (E-learning)
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-md bg-amber-500/15 border border-amber-500/30 px-2.5 py-1 text-xs font-medium text-amber-300">
+                    Node.js
+                  </span>
+                  <span className="rounded-md bg-cyan-500/15 border border-cyan-500/30 px-2.5 py-1 text-xs font-medium text-cyan-300">
+                    PostgreSQL
+                  </span>
+                  <span className="rounded-md bg-slate-800 border border-slate-700 px-2.5 py-1 text-xs font-medium text-slate-300">
+                    Arquitetura em Camadas
+                  </span>
+                </div>
+              </div>
+
+              <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
+                Sistema E-learning Instituto Girassol
+              </h2>
+              <p className="mt-2 text-base font-medium text-slate-300">
+                Plataforma educacional relacional estruturada para gerenciar o aprendizado, a avaliação e a interação dos alunos através de uma arquitetura limpa.
+              </p>
+
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Destaque 1: Ecossistema e Avaliações */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-amber-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-amber-500" />
+                    Ecossistema e Avaliações
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Organização hierárquica rigorosa (<strong>Áreas &gt; Cursos &gt; Módulos &gt; Aulas</strong>) e módulo de provas com proteção de integridade e regras de negócio limitando o cadastro e submissão de questões.
+                  </p>
+                </div>
+
+                {/* Destaque 2: Fórum de Interação */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-blue-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-blue-500" />
+                    Fórum de Interação
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Conexão direta dos alunos ao material didático através de comentários vinculados dinamicamente às aulas, mantendo rastreabilidade e histórico de interações.
+                  </p>
+                </div>
+
+                {/* Destaque 3: Arquitetura & Stack */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-emerald-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                    Arquitetura & Stack
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Backend Node.js/TypeScript com PostgreSQL via <strong>queries SQL puras</strong> e nomenclatura relacional estrita. Padrão modular focado em responsabilidade única (<strong>Models, Repositories, Services e Controllers</strong>).
+                  </p>
+                </div>
+              </div>
+
+              {/* Rodapé do Card (Stack) */}
+              <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-950/40 p-6">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                  Stack Tecnológica do Projeto
+                </h4>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {[
+                    "Node.js",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "SQL Nativo",
+                    "API REST",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-lg bg-slate-800/70 border border-slate-700/80 px-3 py-1 text-xs text-slate-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </article>
+
+            {/* PROJETO 3: PROFETAS DA CHUVA */}
+            <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-sky-500/50">
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-3 w-3 rounded-full bg-sky-500" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-sky-400">
+                    Aplicativo Mobile
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-md bg-sky-500/15 border border-sky-500/30 px-2.5 py-1 text-xs font-medium text-sky-300">
+                    React Native
+                  </span>
+                  <span className="rounded-md bg-cyan-500/15 border border-cyan-500/30 px-2.5 py-1 text-xs font-medium text-cyan-300">
+                    Expo
+                  </span>
+                  <span className="rounded-md bg-slate-800 border border-slate-700 px-2.5 py-1 text-xs font-medium text-slate-300">
+                    TypeScript
+                  </span>
+                </div>
+              </div>
+
+              <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
+                Profetas da Chuva
+              </h2>
+              <p className="mt-2 text-base font-medium text-slate-300">
+                Aplicativo mobile voltado para catalogar e preservar as previsões climáticas dos observadores tradicionais do estado do Ceará.
+              </p>
+
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Destaque 1: Objetivo e Impacto */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-sky-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-sky-500" />
+                    Objetivo e Impacto
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Digitalização e preservação ativa da cultura e sabedoria popular cearense, permitindo o registro sistemático, geolocalizado e histórico das observações meteorológicas dos &ldquo;Profetas da Chuva&rdquo;.
+                  </p>
+                </div>
+
+                {/* Destaque 2: Experiência Mobile */}
+                <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-cyan-400 flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-cyan-500" />
+                    Experiência Mobile
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+                    Interface intuitiva, responsiva e altamente fluida construída com <strong>React Native e Expo</strong> para facilitar a coleta de dados e cadastro ágil mesmo em condições de campo.
+                  </p>
+                </div>
+              </div>
+
+              {/* Rodapé do Card (Stack) */}
+              <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-950/40 p-6">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                  Stack Tecnológica do Projeto
+                </h4>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {[
+                    "React Native",
+                    "Expo",
+                    "TypeScript",
+                    "Mobile Nativo",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-lg bg-slate-800/70 border border-slate-700/80 px-3 py-1 text-xs text-slate-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </article>
+
+            {/* PROJETO 4: ACESSO LIVRE (WEB & MOBILE) */}
             <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-blue-500/50">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -174,7 +431,7 @@ export default function ProjetosPage() {
               </div>
             </article>
 
-            {/* PROJETO 2: SISTEMA DE REPOSIÇÃO DE AULAS - IFCE */}
+            {/* PROJETO 5: SISTEMA DE REPOSIÇÃO DE AULAS - IFCE */}
             <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-slate-700">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -232,7 +489,7 @@ export default function ProjetosPage() {
               </div>
             </article>
 
-            {/* PROJETO 3: LLM FOCADA EM AGRICULTURA */}
+            {/* PROJETO 6: LLM FOCADA EM AGRICULTURA */}
             <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-purple-500/50">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -293,7 +550,7 @@ export default function ProjetosPage() {
               </div>
             </article>
 
-            {/* PROJETO 4: SGB (SISTEMA DE GESTÃO DE BIBLIOTECAS) */}
+            {/* PROJETO 7: SGB (SISTEMA DE GESTÃO DE BIBLIOTECAS) */}
             <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-amber-500/50">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
