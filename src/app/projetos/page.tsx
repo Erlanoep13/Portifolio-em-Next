@@ -87,7 +87,7 @@ export default function ProjetosPage() {
                     Node.js
                   </span>
                   <span className="rounded-md bg-blue-500/15 border border-blue-500/30 px-2.5 py-1 text-xs font-medium text-blue-300">
-                    Typescript
+                    TypeScript
                   </span>
                   <span className="rounded-md bg-cyan-500/15 border border-cyan-500/30 px-2.5 py-1 text-xs font-medium text-cyan-300">
                     PostgreSQL
@@ -150,7 +150,6 @@ export default function ProjetosPage() {
                     "TypeScript",
                     "Node.js",
                     "React",
-                    "React Native",
                     "PostgreSQL",
                     "Docker",
                     "Vitest",
