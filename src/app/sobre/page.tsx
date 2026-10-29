@@ -17,7 +17,7 @@ export default function SobrePage() {
             href="/"
             className="flex items-center gap-3 group transition-transform duration-200 hover:scale-[1.02]"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-500 font-bold text-white shadow-lg shadow-blue-500/20">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-tr from-blue-600 to-cyan-500 font-bold text-white shadow-lg shadow-blue-500/20">
               EB
             </div>
             <div className="flex flex-col text-left">
@@ -207,7 +207,7 @@ export default function SobrePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Formação 1: IFCE */}
               <div className="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 relative overflow-hidden transition-all duration-300 hover:border-slate-700">
-                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-blue-500 to-cyan-400" />
+                <div className="absolute top-0 left-0 h-1 w-full bg-linear-to-r from-blue-500 to-cyan-400" />
                 <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">
                   Ensino Superior
                 </span>
@@ -226,7 +226,7 @@ export default function SobrePage() {
 
               {/* Formação 2: EEEP Venceslau Vieira Batista */}
               <div className="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 relative overflow-hidden transition-all duration-300 hover:border-slate-700">
-                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 to-indigo-500" />
+                <div className="absolute top-0 left-0 h-1 w-full bg-linear-to-r from-cyan-400 to-indigo-500" />
                 <span className="text-xs font-semibold text-cyan-400 uppercase tracking-wider">
                   Ensino Médio e Técnico
                 </span>
