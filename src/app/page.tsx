@@ -17,7 +17,7 @@ export default function HomePage() {
             href="/"
             className="flex items-center gap-3 group transition-transform duration-200 hover:scale-[1.02]"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-500 font-bold text-white shadow-lg shadow-blue-500/20">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-tr from-blue-600 to-cyan-500 font-bold text-white shadow-lg shadow-blue-500/20">
               EB
             </div>
             <div className="flex flex-col text-left">
@@ -74,7 +74,7 @@ export default function HomePage() {
 
             <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl">
               Erlano Benevides <br className="hidden sm:inline" />
-              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
                 de Sousa
               </span>
             </h1>

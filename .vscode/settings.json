@@ -1,0 +1,5 @@
+{
+  "tailwindCSS.lint.recommendedVariantOrder": "ignore",
+  "tailwindCSS.lint.conflictingClassNames": "ignore"
+}
+

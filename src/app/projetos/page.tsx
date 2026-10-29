@@ -17,7 +17,7 @@ export default function ProjetosPage() {
             href="/"
             className="flex items-center gap-3 group transition-transform duration-200 hover:scale-[1.02]"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-500 font-bold text-white shadow-lg shadow-blue-500/20">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-tr from-blue-600 to-cyan-500 font-bold text-white shadow-lg shadow-blue-500/20">
               EB
             </div>
             <div className="flex flex-col text-left">
@@ -74,7 +74,7 @@ export default function ProjetosPage() {
           {/* LISTA DETALHADA DE PROJETOS */}
           <div className="mt-12 space-y-12">
             {/* PROJETO 1: ACESSO LIVRE (DESTAQUE MÁXIMO COM FOCO NA EVOLUÇÃO MOBILE) */}
-            <article className="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-blue-500/50">
+            <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-blue-500/50">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <span className="flex h-3 w-3 rounded-full bg-blue-500" />
@@ -175,7 +175,7 @@ export default function ProjetosPage() {
             </article>
 
             {/* PROJETO 2: SISTEMA DE REPOSIÇÃO DE AULAS - IFCE */}
-            <article className="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-slate-700">
+            <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-slate-700">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <span className="flex h-3 w-3 rounded-full bg-emerald-500" />
@@ -233,7 +233,7 @@ export default function ProjetosPage() {
             </article>
 
             {/* PROJETO 3: LLM FOCADA EM AGRICULTURA */}
-            <article className="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-purple-500/50">
+            <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-purple-500/50">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <span className="flex h-3 w-3 rounded-full bg-purple-500" />
@@ -294,7 +294,7 @@ export default function ProjetosPage() {
             </article>
 
             {/* PROJETO 4: SGB (SISTEMA DE GESTÃO DE BIBLIOTECAS) */}
-            <article className="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-amber-500/50">
+            <article className="rounded-3xl border border-slate-800 bg-linear-to-b from-slate-900/80 to-slate-900/40 p-8 sm:p-10 shadow-xl transition-all duration-300 hover:border-amber-500/50">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <span className="flex h-3 w-3 rounded-full bg-amber-500" />
