@@ -157,7 +157,7 @@ export default function HomePage() {
               </span>
               <span className="hidden sm:inline text-slate-700">•</span>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/erlanobenevides/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-slate-300 hover:text-blue-400 transition-colors"
@@ -172,7 +172,7 @@ export default function HomePage() {
               </Link>
               <span className="hidden sm:inline text-slate-700">•</span>
               <Link
-                href="https://github.com"
+                href="https://github.com/Erlanoep13"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-slate-300 hover:text-blue-400 transition-colors"
